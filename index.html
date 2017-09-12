@@ -71,8 +71,8 @@ input.largerCheckbox
 var emailWnd = window.open(" email georgerautio@gmail.com");
 
 // in general to copy html to the new window
-emailWnd.document.$('form').html(" ... some programmaticaly created elements ... ");
-emailWnd.document.$('form').text($('input[checkbox="Yes, No "]').text());
+emailWnd.document.$('form').html(" ");
+emailWnd.document.$('form').text($('input[checkbox=" Yes, No "]').value());
 </script>
 <form method="post"> <!-- action="mailto:georgerautio@gmail.com" -->
    <p>(° ͜ʖ°)☞ Yes</p><input type="checkbox" class="largerCheckbox" value="Yes">
