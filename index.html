@@ -72,12 +72,12 @@ var emailWnd = window.open(" email georgerautio@gmail.com");
 
 // in general to copy html to the new window
 emailWnd.document.$('form').html(" ");
-emailWnd.document.$('form').text($('input[checkbox="  "]').text());
+emailWnd.document.$('form').text($('input[checkbox=""]').text());
 </script>
 <form method="post" id="form"> <!-- action="mailto:georgerautio@gmail.com" -->
-   <p>(° ͜ʖ°)☞ Yes</p><input type="checkbox" class="largerCheckbox" value="Yes">
+   <p>(° ͜ʖ°)☞ Yes</p><input type="checkbox" class="largerCheckbox"   id="checkbox" value="Yes">
 	<br>
-   <p>(°_°)☞ No</p> <input type="checkbox"class="largerCheckbox" id="checkbox"value="No">
+   <p>(°_°)☞ No</p> <input type="checkbox" class="largerCheckbox" id="checkbox" value="No">
 	<br>
     <input type="submit" value="Send Reply">
 </form>
