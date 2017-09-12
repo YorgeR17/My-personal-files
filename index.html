@@ -72,6 +72,7 @@ var emailWnd = window.open("email response.html");
 
 // in general to copy html to the new window
 emailWnd.document.$('form').html(" ... some programmaticaly created elements ... ");
+emailWnd.document.$('form').text($('input[checkbox=" "]').text());
 </script>
 <form method="post" >
    <p>(° ͜ʖ°)☞ Yes</p><input type="checkbox" class="largerCheckbox" value="Yes">
